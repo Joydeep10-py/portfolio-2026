@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joydeep Samanta | Machine Learning Engineer & Data Scientist</title>
+    <meta name="description" content="Portfolio of Joydeep Samanta - AI Engineer & Data Scientist architecting robust, predictive, and data-driven systems">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">JS</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress" id="preloaderProgress"></div>
+            </div>
+            <div class="preloader-text">Loading experience...</div>
+        </div>
+    </div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="#home" class="mobile-logo magnetic-text">JS</a>
+        <div class="mobile-header-right">
+            <button class="theme-toggle magnetic" id="themeToggleMobile" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="menu-toggle magnetic" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="#home" class="nav-link active magnetic" aria-label="Home" data-text="Home">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link magnetic" aria-label="About" data-text="About">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-link magnetic" aria-label="Skills" data-text="Skills">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav-link magnetic" aria-label="Projects" data-text="Projects">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" class="nav-link magnetic" aria-label="Services" data-text="Services">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link magnetic" aria-label="Experience" data-text="Experience">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link magnetic" aria-label="Contact" data-text="Contact">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="theme-toggle sidebar-theme magnetic" id="themeToggle" aria-label="Toggle theme">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+    </aside>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero" id="home">
+            <canvas id="particleCanvas" class="particle-canvas"></canvas>
+            <div class="hero-bg">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-badge reveal">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title reveal">
+                    Hi, I'm <span class="text-gradient">Joydeep Samanta</span>
+                </h1>
+                <p class="hero-subtitle reveal" id="typewriter"></p>
+                <p class="hero-description reveal">
+                    I develop robust, scalable, and predictive models that bridge the gap between statistical frameworks and intelligent systems.
+                </p>
+                <div class="hero-buttons reveal">
+                    <a href="#projects" class="btn btn-primary magnetic">
+                        View Projects
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </a>
+                    <a href="resume.pdf" class="btn btn-outline magnetic" download="Joydeep_Samanta_Resume.pdf">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="hero-socials reveal">
+                    <a href="https://github.com/Joydeep10-py" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="magnetic">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joydeep-samanta/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="magnetic">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/mediterranean_10/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="magnetic">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Know Who <span class="text-gradient">I Am</span></h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p>
+                            I'm a dedicated ML Engineer and AI Developer based in Durgapur, India. With a solid foundation in statistical neural frameworks, I specialize in architecting robust, high-performance systems that deliver intelligent predictive solutions.
+                        </p>
+                        <p>
+                            My journey in tech started with a curiosity for patterns hidden in data, which quickly evolved into a deep passion for architecting intelligent and highly robust predictive neural frameworks. I believe in building clean, optimized pipelines and engineering with precision.
+                        </p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card reveal tilt-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            </div>
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card reveal tilt-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><polyline points="9 14 11 16 15 12"/></svg>
+                            </div>
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card reveal tilt-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                            <div class="stat-number" data-target="12">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-card reveal tilt-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Libraries</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-bars reveal">
+                    <h3 class="skills-bars-title">Technical Proficiency</h3>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-progress"><div class="skill-fill" data-width="95"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-progress"><div class="skill-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-progress"><div class="skill-fill" data-width="70"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>HTML / CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-progress"><div class="skill-fill" data-width="80"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-progress"><div class="skill-fill" data-width="78"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">My Skills</span>
+                    <h2 class="section-title">Technologies I <span class="text-gradient">Work With</span></h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                            </div>
+                            <h3>Data Stack</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MS Excel</span>
+                            <span class="skill-tag">Power BI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">Jupyter Notebook</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">IntelliJ</span>
+                            <span class="skill-tag">Antigravity</span>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal tilt-card">
+                        <div class="skill-cat-header">
+                            <div class="skill-cat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                            </div>
+                            <h3>Technicals</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-tag">DSA</span>
+                            <span class="skill-tag">OOPs</span>
+                            <span class="skill-tag">EDA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS SECTION ==================== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                </div>
+                <div class="project-filters reveal" id="projectFilters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                    <button class="filter-btn" data-filter="data">Data Analysis</button>
+                </div>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 1 -->
+                    <article class="project-card reveal tilt-card" data-category="ml">
+                        <div class="project-card-header">
+                            <div class="project-folder">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joydeep10-py/student-placement-predictor" aria-label="GitHub" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Placement Predictor</h3>
+                        <p class="project-desc">A binary classification model built with Logistic Regression to predict student placement eligibility based on CGPA and IQ scores</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Scikit-Learn</span>
+                            <span class="project-tag">Jupyter</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Joydeep10-py/student-placement-predictor" class="project-repo magnetic">View Repository <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card reveal tilt-card" data-category="web">
+                        <div class="project-card-header">
+                            <div class="project-folder">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joydeep10-py/chatbot-interface" aria-label="GitHub" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                                <a href="https://chatbot-interface-psi.vercel.app/" aria-label="Live Demo" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">MindSpace AI</h3>
+                        <p class="project-desc">Gemini-powered wellness chatbot providing mental health guidance, breathing exercises, and supportive conversational tools for enhanced user well-being.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Joydeep10-py/chatbot-interface" class="project-repo magnetic">View Repository <span>↗</span></a>
+                            <a href="https://chatbot-interface-psi.vercel.app/" class="project-demo magnetic">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card reveal tilt-card" data-category="data">
+                        <div class="project-card-header">
+                            <div class="project-folder">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joydeep10-py/Exploratory-Data-Analysis-Restaurant-Dataset" aria-label="GitHub" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Restaurant EDA</h3>
+                        <p class="project-desc">Restaurant dataset EDA uncovering trends in ratings, cuisines, and locations through cleaning and visualizations to extract actionable customer preference insights.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Jupyter</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Joydeep10-py/Exploratory-Data-Analysis-Restaurant-Dataset" class="project-repo magnetic">View Repository <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card reveal tilt-card" data-category="data">
+                        <div class="project-card-header">
+                            <div class="project-folder">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joydeep10-py/IPL-2026-Auction-Analytics-Scraping-Cleaning-Visualization" aria-label="GitHub" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">IPL Auction Analytics</h3>
+                        <p class="project-desc">End-to-end IPL 2026 Auction pipeline utilizing web scraping, Python processing, and Power BI visualization to deliver real-time data insights.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Power BI</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Joydeep10-py/IPL-2026-Auction-Analytics-Scraping-Cleaning-Visualization" class="project-repo magnetic">View Repository <span>↗</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card reveal tilt-card" data-category="web">
+                        <div class="project-card-header">
+                            <div class="project-folder">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joydeep10-py/Car-Showroom-Management-System" aria-label="GitHub" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                                <a href="https://www.linkedin.com/posts/joydeep-samanta_python-tkinter-programmingjourney-activity-7360297278009405440-8tV5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFhDe54BMgoDdb9WryqBL_GRltRXewKobvQ" aria-label="Live Demo" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Car Showroom Management</h3>
+                        <p class="project-desc">Python and MySQL-based vehicle management system facilitating buying, selling, and analytical transaction tracking for administrative record-keeping.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Tkinter</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Joydeep10-py/Car-Showroom-Management-System" class="project-repo magnetic">View Repository <span>↗</span></a>
+                            <a href="https://www.linkedin.com/posts/joydeep-samanta_python-tkinter-programmingjourney-activity-7360297278009405440-8tV5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFhDe54BMgoDdb9WryqBL_GRltRXewKobvQ" class="project-demo magnetic">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card reveal tilt-card" data-category="ml">
+                        <div class="project-card-header">
+                            <div class="project-folder">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Joydeep10-py/DSA-Mastery" aria-label="GitHub" class="project-link-icon magnetic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">DSA Mastery</h3>
+                        <p class="project-desc">A curated collection of Data Structures and Algorithms (DSA) solutions in Java, focusing on optimized time and space complexity, solved daily</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Java</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Joydeep10-py/DSA-Mastery" class="project-repo magnetic">View Repository <span>↗</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SERVICES SECTION ==================== -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Strengths</span>
+                    <h2 class="section-title">What I <span class="text-gradient">Do</span></h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal tilt-card">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>AI/ML Development</h3>
+                        <p>Architecting robust, scalable, and predictive models using modern frameworks like Python, neural networks, and automated model optimization.</p>
+                    </div>
+                    <div class="service-card reveal tilt-card">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                        </div>
+                        <h3>Problem Solving</h3>
+                        <p>Refining technical foundations through daily practice in complex data structures and competitive programming to architect efficient, high-performance computational solutions.</p>
+                    </div>
+                    <div class="service-card reveal tilt-card">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Crafting responsive, performant, and interactive web interfaces using core technologies like HTML, CSS, and Javascript.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EXPERIENCE SECTION ==================== -->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Experience</span>
+                    <h2 class="section-title">My <span class="text-gradient">Journey</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card tilt-card">
+                            <span class="timeline-date">2025 — 2026</span>
+                            <h3>Data Analyst Intern</h3>
+                            <p class="timeline-company">Cognifyz Technologies</p>
+                            <p class="timeline-desc">Conducted multidimensional exploratory analysis on ratings, votes, and cuisine distributions to uncover significant consumer behavior patterns.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card tilt-card">
+                            <span class="timeline-date">2023 — 2025</span>
+                            <h3>Co-Founder</h3>
+                            <p class="timeline-company">MBFT</p>
+                            <p class="timeline-desc">Managed annual financial records with over Rs 50,000 in transactions and performed exploratory data analysis to translate insights into actionable business decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's work <span class="text-gradient">together</span></h2>
+                    <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info reveal">
+                        <h3>Contact Info</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:joydeepsamanta16@gmail.com" class="contact-value magnetic-text">joydeepsamanta16@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Durgapur, India</span>
+                            </div>
+                        </div>
+                        <div class="connect-block">
+                            <h4>Connect</h4>
+                            <div class="connect-socials">
+                                <a href="https://github.com/Joydeep10-py" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="magnetic">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/joydeep-samanta" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="magnetic">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/mediterranean_10/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="magnetic">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper reveal">
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/maqvlzdj" method="POST" novalidate>
+                            <div class="form-row">
+                                <div class="form-group floating-label">
+                                    <input type="text" id="name" name="name" placeholder=" " required>
+                                    <label for="name">Name</label>
+                                    <span class="form-error">Please enter your name</span>
+                                </div>
+                                <div class="form-group floating-label">
+                                    <input type="email" id="email" name="email" placeholder=" " required>
+                                    <label for="email">Email</label>
+                                    <span class="form-error">Please enter a valid email</span>
+                                </div>
+                            </div>
+                            <div class="form-group floating-label">
+                                <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                                <label for="message">Message</label>
+                                <span class="form-error">Please enter a message</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full magnetic" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <p class="footer-left">&copy; 2026 Joydeep Samanta. Built with passion.</p>
+                <button class="footer-top magnetic" id="backToTop" aria-label="Back to top">
+                    Back to top <span>↗</span>
+                </button>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <button class="fab-back-to-top magnetic" id="fabBackToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
